@@ -32,7 +32,9 @@ class ModelTrainer():
             logging.info("train test split")
 
             models = (
-                ("Linear Regression", LinearRegression())
+                ("Linear Regression", LinearRegression(),
+                 "Random Forest", RandomForestRegressor(),
+                 )
             )
         except Exception as e:
             raise CustomException(e,sys)
